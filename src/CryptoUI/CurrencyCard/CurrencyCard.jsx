@@ -20,14 +20,14 @@ export function CurrencyCard(props) {
                <div>{coin.symbol}/USD</div>
                <div className="ml-auto text-right">
                   <span className="pr-2">
-                     {coin.changePercent24Hr.toFixed(2)}%
+                     {Math.round(coin.changePercent24Hr*100)/100}%
                   </span>
                   <span>{coin.changePercent24Hr.toFixed(2)}</span>
                </div>
             </div>
             <div className="flex text-left px-2 pt-1 text-lg">
                <div className="price-usd leading-none font-bold">
-                  {coin.priceUsd}
+                  {Math.round(coin.priceUsd*100)/100}
                </div>
                <div className="ml-auto text-right text-xxs">
                   <p className="leading-none">
