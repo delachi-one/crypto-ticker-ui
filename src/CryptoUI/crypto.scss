@@ -1,0 +1,22 @@
+.positive {
+   background-color: #465950;
+}
+.negative {
+   background-color: #884c4f;
+}
+.price-usd, .currency-name {
+   filter: drop-shadow(1px 1px 0px #000000);
+}
+.skeleton {
+   background-color: #211a1a;
+   animation: skeleton-loading 1s linear infinite alternate;
+}
+@keyframes skeleton-loading {
+   0% {
+      background-color: hsl(200, 20%, 80%);
+   }
+
+   100% {
+      background-color: hsl(120, 1%, 42%);
+   }
+}
